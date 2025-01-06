@@ -1,6 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -8,7 +6,6 @@ function App() {
   let [Length,setLength]=useState(8);
   let [specialChar,setspecialChar]=useState(false);
   let [password,setPassword]=useState("");
-
   const passwordRef = useRef(null)
 
   const copyPasswordToClipBoard = useCallback(()=>{
@@ -77,8 +74,6 @@ function App() {
             onChange={()=>{setspecialChar((prev)=>!prev)}}
             id='specialCharInput'/>
           <label htmlFor='specialCharInput'>Special Character</label>
-
-      
         </div>
       </div>
     </>
